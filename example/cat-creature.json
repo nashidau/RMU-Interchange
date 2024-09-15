@@ -1,0 +1,54 @@
+{
+  "Category": "Creature",
+  "Name": "Creature Name",
+  "AG": 4,
+  "CO": 4,
+  "EM": 4,
+  "IN": 4,
+  "ME": 4,
+  "PR": 4,
+  "QU": 4,
+  "RE": 4,
+  "SD": 4,
+  "ST": 4,
+  "AT": 4,
+  "DB": 34,
+  "critreduction": 4,
+  "level": 4,
+  "hits": 4,
+  "PP": 4,
+  "size": 4,
+  "initiative": 4,
+  "Fatigue": 33,
+  "Ch": 4,
+  "Ess": 4,
+  "Mnt": 4,
+  "Phy": 4,
+  "Fear": 4,
+  "data-attack": [
+    {
+      "attack": "34B(6)ra"
+    },
+    {
+      "attack": "34M(5)cl"
+    }
+  ],
+  "data-move": [
+    {
+      "type": "walk",
+      "pace": "Run",
+      "bmr": "22"
+    }
+  ],
+  "data-skills": [
+    {
+      "skill": "Running",
+      "bonus": 43
+    }
+  ],
+  "data-talents": [
+    {
+      "talent": "Animalistic"
+    }
+  ]
+}
