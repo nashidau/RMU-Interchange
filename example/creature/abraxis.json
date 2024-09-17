@@ -1,0 +1,78 @@
+{
+    "Category": "Creature",
+    "Name": "Abraxas",
+    "AG": 2,
+    "CO": 0,
+    "EM": -4,
+    "IN": 0,
+    "ME": -4,
+    "PR": -2,
+    "QU": 1,
+    "RE": -1,
+    "SD": -4,
+    "ST": 2,
+    "AT": 3,
+    "DB": 11,
+    "level": 4,
+    "hits": 30,
+    "PP": 1,
+    "size": "VI",
+    "initiative": 1,
+    "Ch": 0,
+    "Ess": 0,
+    "Mnt": 0,
+    "Phy": 20,
+    "Fear": 0,
+    "data-attack": [
+        {
+            "attack": "57B(6)gr"
+        },
+        {
+            "attack": "45B(6)ss"
+        }
+    ],
+    "data-move": [
+        {
+            "type": "slith belly",
+            "pace": "Run",
+            "bmr": 26
+        }
+    ],
+    "data-skills": [
+        {
+            "skill": "Perception",
+            "bonus": 19
+        },
+        {
+            "skill": "Run",
+            "bonus": 31
+        },
+        {
+            "skill": "Climb",
+            "bonus": 31
+        },
+        {
+            "skill": "Hiding",
+            "bonus": 23
+        },
+        {
+            "skill": "Stalking",
+            "bonus": 23
+        },
+        {
+            "skill": "Multi-Attack",
+            "bonus": 24
+        }
+    ],
+    "data-talents": [
+        {
+            "talent": "Animalistic"
+        },
+        {
+            "talent": "Diet, carnivore"
+        },
+        {
+            "talent": "Reproduction"
+        }
+    ]
+}
