@@ -6,13 +6,17 @@ Note the fields are based on the Creature Law data.
 
 Category is what sort of sheet this is.  Creature is the only documented fotmat at the moment.
 
+```json
       "Category": "Creature",
+```
 
-
+```json
   "Name": "Creature Name",
+```
 
 The stats:  Just the stat bonus.  Temps/Potentials are ignored.  Ravial modigiers should be incuded. 
 
+```
   "AG": 4,
   "CO": 4,
   "EM": 4,
@@ -23,6 +27,13 @@ The stats:  Just the stat bonus.  Temps/Potentials are ignored.  Ravial modigier
   "RE": 4,
   "SD": 4,
   "ST": 4,
+```
+
+Optionally you can supply the original stats.  Note Self Discipline is "SelfDiscipline" - no space
+```json
+  "Strength": 38,
+  "Agility": 33,
+```
 
 AT: Can either be a number  (1-10).
   Or "AT 1"
@@ -64,6 +75,7 @@ RRs.  Should include own realm bonus and level
 
 
 List of attacks.   Attack is OB, Size Letter (Size Number), type of the attack.  Additonal codes may follow; currently undocumented (for secondary attacks etc).  
+```json
   "data-attack": [
     {
       "attack": "34B(6)ra"
@@ -72,7 +84,7 @@ List of attacks.   Attack is OB, Size Letter (Size Number), type of the attack. 
       "attack": "34M(5)cl"
     }
   ],
-
+```
 
 List of movements.
   "data-move": [
