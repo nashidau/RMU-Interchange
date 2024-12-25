@@ -72,6 +72,11 @@ Hits.  NOT scaled by size.
   "hits": 4,
 ```
 
+Death hits (optional).  At how much damage the creature dies.
+```json
+   "deathhits": 44,
+```
+
 PP: As expected.  Like hits, this is the maximim.
 ```json
   "PP": 4,
@@ -169,4 +174,11 @@ A description may be added to a craeature.  This may be biographical data or abo
 
 ```json
   "content" : "<p>Descriptive text</p>",
+```
+
+Number encounted.  This is an info field for Creatures.  Generally should not be used on PCs.
+Format is a descriptive name and the dice in parenthesis.
+
+```json
+  "#Enc": "Solo (1d2)"
 ```
