@@ -82,10 +82,34 @@ PP: As expected.  Like hits, this is the maximim.
   "PP": 4,
 ```
 
-Size: 1-??  5 for medium.  A missing size is assumed to be 5.  Trackers should
-either skill hits or damage to match the size.
-```
+Size: 1-??  5 for medium.  A missing size is assumed to be 5.  This represents a characters
+physical size.  Humans are 5.  Trackers/VTT should either scale hits or damage
+to match the size.  Small size creatures recieve a DB bonus against physically larger foes.
+
+resistsize: 1-?? (optional).  Certain creatures resist damage as a larger or
+smaller creature.  This may be because of densitty, magical effects or some
+other property.  Note this is not the same as crit reduction. 
+
+```json
   "size": 4,
+  "resistsize": 5,
+```
+
+Critreduction (optional).  A common element for nasty RM creatures is crit reduction.
+This is similar to resist size - resist size also impacts hits however.  For
+compatibility with the book codes we use the same codes.   I,II,III - 1 to 3
+levels of critical reduction.  Theoritically, other codes would be acceptable.
+Addtionally the codes ! (Immune to stagger, knock back and knock down), @ (Immune to,
+rules coming, # Immune to bleeding; bleed turns to extra hits).
+```json
+   "critreduction": "I!@#",
+```
+
+Critical Immunity (optional).  The creature may be immune to a number of critical types.
+Each is prefixed by 'P' and is followed by the ciritcal code  Multiple are separated by commas.
+This is obviously super optional.
+```json
+    "critimmunue": "PK, PG",
 ```
 
 
@@ -170,7 +194,9 @@ List and ranks are required.   All other fields are optional.
   ]
 ```
 
-A description may be added to a craeature.  This may be biographical data or about the type of creature.  It is given as HTML; please restrict formating to <p>, <i>, <b> & <br>.
+A description optionally may be added to a craeature.  This may be biographical
+data or about the type of creature.  It is given as HTML; please restrict
+formating to <p>, <i>, <b> & <br>.
 
 ```json
   "content" : "<p>Descriptive text</p>",
