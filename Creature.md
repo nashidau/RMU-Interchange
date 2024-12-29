@@ -53,14 +53,10 @@ else it can have AT at the front
 ```
 
 DB: At the moment just the normal db. 
-
-  "DB": 34,
-
-Level of critical reduction.  Should be a nubmer from 0-3.   This field is optional.  A zero is assumed
-otherwise.
 ```json
-  "critreduction": 2,
+  "DB": 34,
 ```
+
 
 Level of creature
 ```json
@@ -95,14 +91,19 @@ other property.  Note this is not the same as crit reduction.
   "resistsize": 5,
 ```
 
+
 Critreduction (optional).  A common element for nasty RM creatures is crit reduction.
 This is similar to resist size - resist size also impacts hits however.  For
 compatibility with the book codes we use the same codes.   I,II,III - 1 to 3
-levels of critical reduction.  Theoritically, other codes would be acceptable.
-Addtionally the codes ! (Immune to stagger, knock back and knock down), @ (Immune to,
-rules coming, # Immune to bleeding; bleed turns to extra hits).
+levels of critical reduction. 
 ```json
-   "critreduction": "I!@#",
+  "critreduction": 2,
+```
+
+Critresist; the codes ! (Immune to stagger, knock back and knock down), @
+(Immune to, rules coming, # Immune to bleeding; bleed turns to extra hits).
+```json
+   "critresist": "!@#",
 ```
 
 Critical Immunity (optional).  The creature may be immune to a number of critical types.
@@ -207,4 +208,42 @@ Format is a descriptive name and the dice in parenthesis.
 
 ```json
   "#Enc": "Solo (1d2)"
+```
+
+Variants:  Optional field listing alternative names for the creature.
+This is for creatures, not NPCs.
+
+```json
+	cr.variants = "Feathed Rat, Flying Rodent, Rock Dove",
+```
+
+Armor description.  A listing of what form a creatures armor takes.  This is generally
+something like "hard scales" or "feathers" for animals, else the armor itself.
+```json
+	cr.armordescription = "Iron feathers",
+```
+
+A description of the size.  Weight and length.
+```json
+	cr.sizedescription = "7' wide, weighing 300 lbs"
+```
+
+Treasure.  usually a code.  For specific items use inventory items.
+```json
+	cr.treasure = 'c'
+```
+
+Magic realm.  Usually essence, channeling or mentalism.  May be hybrid or arcane realms
+```json
+	cr.realm = "Channeling",
+```
+
+Category the creature belongs too.
+```json
+	cr.creaturecatory = "Animal-Birds"
+```
+
+The breeding pattern.  Listed as 'misc' in creature law.
+```json
+	cr.family = "Lots of eggs",
 ```
