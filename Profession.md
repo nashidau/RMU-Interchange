@@ -1,7 +1,12 @@
 Profession format is fairly simple
 
+Optionall a Name field.  This is generally useful, but not needed if part of a data transfer.
 ```json
-content: "A HTML desciption of the profession",
+  "Name": "Toastmancer",
+```
+
+```json
+  "content": "A HTML desciption of the profession",
 ```
 
 The realm of the profession.  'None' for Arms users who can then select their profession.
