@@ -183,6 +183,8 @@ Note the capital L for lists.  Optionally trickery and grace fields can be inclu
 
 List and ranks are required.   All other fields are optional.
 
+Ranks may also take the value "level" which means the creatures own level.
+
 ```json
   "data-spellLists": [
     {
