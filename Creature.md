@@ -60,7 +60,11 @@ DB: At the moment just the normal db.
 
 Level of creature
 ```json
-  "level": 4,
+  "Level": 4,
+```
+Some creatures have a varaince for Level Varaince.  It is a single Letter.  100% optional.
+```json
+  "LevelVariance": "B"
 ```
 
 Hits.  NOT scaled by size.
