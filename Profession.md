@@ -9,7 +9,7 @@ Optionall a Name field.  This is generally useful, but not needed if part of a d
   "content": "A HTML desciption of the profession",
 ```
 
-The realm of the profession.  'None' for Arms users who can then select their profession.
+The realm of the profession.  'None' for Arms users who can then select their realm.
 Hybrids have their realms separated by '/' in alphabetical order.  
 ```json
   "Realm": "Essence",
