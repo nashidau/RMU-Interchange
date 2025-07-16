@@ -4,6 +4,10 @@ Single JSON file.
 
 Note the fields are based on the Creature Law data.
 
+We have _some_ documentation here for PC sheets - full support is coming in the future for PCs
+
+## Top Level
+
 Category is what sort of sheet this is.  Creature is the only documented fotmat at the moment.
 
 ```json
@@ -13,6 +17,8 @@ Category is what sort of sheet this is.  Creature is the only documented fotmat 
 ```json
   "Name": "Creature Name",
 ```
+
+## Stats
 
 The stats:  Just the stat bonus.  Temps/Potentials are ignored.  Ravial modigiers should be incuded. 
 
@@ -39,6 +45,23 @@ Stats can also be in the form of AG: Temp (Bonus)
   "EM": "12 (-4)",
 ```
 
+For PCs (not supported yet) you can use:
+```json
+  "ST": "44/55 (3)"
+```
+
+In this format we have:
+ - Temporary stat of 44
+ - Potential of 55
+ - Special or racial bonus of 3
+
+Note the bonus does not include the stat bonus.   The total bonus will be updated by the sheet
+automatically.
+
+
+## Defenses
+
+
 AT: Can either be a number  (1-10).
 ```json
   "AT": 5,
@@ -52,11 +75,10 @@ else it can have AT at the front
   "AT": "1,5,3,3"
 ```
 
-DB: At the moment just the normal db. 
+DB: At the moment just the base db. 
 ```json
   "DB": 34,
 ```
-
 
 Level of creature
 ```json
@@ -67,15 +89,22 @@ Some creatures have a varaince for Level Varaince.  It is a single Letter.  100%
   "LevelVariance": "B"
 ```
 
+## Hit Points
+
 Hits.  NOT scaled by size.
 ```json
   "hits": 4,
 ```
 
+Addition
+
+
 Death hits (optional).  At how much damage the creature dies.
 ```json
    "deathhits": 44,
 ```
+
+## Other
 
 PP: As expected.  Like hits, this is the maximim.
 ```json
