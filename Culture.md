@@ -1,10 +1,16 @@
 # Cultures
 
-The culture format is quite simple.  A culture consists of a description and
-a list of skills.
+The culture format is quite simple.  A culture consists of a name,
+a description, and a list of skills in a single JSON object.
+
+The culture name field is just called Name.  Note the capital letter.
+
+```json
+  "Name" : "Coastal"
+```
 
 The description is in the "content" section.  This should be a HTML snipped (if
-ingesting into a VTT, it may be a markdown snipped.
+ingesting into a VTT, it may be a Markdown snipped.
 
 The content should include a section on Crafts & Vocations.  Both should
 start a new paragraph, and title word should be bolded.
