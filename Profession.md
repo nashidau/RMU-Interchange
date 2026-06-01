@@ -15,6 +15,20 @@ Hybrids have their realms separated by '/' in alphabetical order.
   "Realm": "Essence",
 ```
 
+If the profession's realm is 'Arcane', then they may also be able to select
+aspects.   If so the profession will have an Aspects field.  The Aspects field
+is a list of types of Aspects the profession can select from.  The two possible
+values are "Preferred" or "Regular".
+
+```json
+Aspects = "Preferred",
+```
+
+```json
+Aspects = "Preferred,Regular",
+```
+
+
 Category costs are in an object 'data-skillCost' based on the English standard names.
 This does NOT include the weapon or spell costs.
 ```json
