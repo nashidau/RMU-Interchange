@@ -250,36 +250,36 @@ Variants:  Optional field listing alternative names for the creature.
 This is for creatures, not NPCs.
 
 ```json
-	"variants" = "Feathed Rat, Flying Rodent, Rock Dove",
+	"variants": "Feathed Rat, Flying Rodent, Rock Dove",
 ```
 
 Armor description.  A listing of what form a creatures armor takes.  This is generally
 something like "hard scales" or "feathers" for animals, else the armor itself.
 ```json
-	"armordescription" = "Iron feathers",
+	"armordescription": "Iron feathers",
 ```
 
 A description of the size.  Weight and length.
 ```json
-	"sizedescription" = "7' wide, weighing 300 lbs"
+	"sizedescription": "7' wide, weighing 300 lbs"
 ```
 
 Treasure.  usually a code.  For specific items use inventory items.
 ```json
-	"treasure" = "c"
+	"treasure": "c"
 ```
 
 Magic realm.  Usually essence, channeling or mentalism.  May be hybrid or arcane realms
 ```json
-	"realm" = "Channeling",
+	"realm": "Channeling",
 ```
 
 Category the creature belongs too.
 ```json
-	"creaturecatory" = "Animal-Birds"
+	"creaturecatory": "Animal-Birds"
 ```
 
 The breeding pattern.  Listed as 'misc' in creature law.
 ```json
-	"family" = "Lots of eggs",
+	"family": "Lots of eggs",
 ```
