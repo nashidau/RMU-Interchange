@@ -148,17 +148,17 @@ This is obviously super optional.
 
 
 Initiaive modifier 
-```
+```json
   "initiative": 4,
 ```
 
 Fatigue
-```
+```json
   "Fatigue": 33,
 ```
 
 RRs.  Should include own realm bonus and level
-```
+```json
   "Ch": 4,
   "Ess": 4,
   "Mnt": 4,
@@ -179,7 +179,7 @@ List of attacks.   Attack is OB, Size Letter (Size Number), type of the attack. 
 ```
 
 List of movements.
-```
+```json
   "data-move": [
     {
       "type": "walk",
@@ -190,7 +190,7 @@ List of movements.
 ```
 
 Skills.  Name and type.  Optionally a "ranks" field.
-```
+```json
   "data-skills": [
     {
       "skill": "Running",
@@ -202,7 +202,7 @@ Skills.  Name and type.  Optionally a "ranks" field.
 Optionally they can include "ranks" with a numeric ranks.
 
 List of talents: Currently underspecified - this will get updated.
-```
+```json
   "data-talents": [
     {
       "talent": "Animalistic"
@@ -221,18 +221,19 @@ Ranks may also take the value "level" which means the creatures own level.
 ```json
   "data-spellLists": [
     {
-        list: Name
-        ranks: Number
-        SCR: number
-        mastery: number
-        grace: number
-        trickery: number
+        "list": "Name",
+        "ranks": "Number",
+        "SCR": "number",
+        "mastery": "number",
+        "grace": "number",
+        "trickery": "number",
+    }
   ]
 ```
 
 A description optionally may be added to a craeature.  This may be biographical
 data or about the type of creature.  It is given as HTML; please restrict
-formating to <p>, <i>, <b> & <br>.
+formating to p, i, b, and br tags.
 
 ```json
   "content" : "<p>Descriptive text</p>",
@@ -249,36 +250,36 @@ Variants:  Optional field listing alternative names for the creature.
 This is for creatures, not NPCs.
 
 ```json
-	cr.variants = "Feathed Rat, Flying Rodent, Rock Dove",
+	"variants" = "Feathed Rat, Flying Rodent, Rock Dove",
 ```
 
 Armor description.  A listing of what form a creatures armor takes.  This is generally
 something like "hard scales" or "feathers" for animals, else the armor itself.
 ```json
-	cr.armordescription = "Iron feathers",
+	"armordescription" = "Iron feathers",
 ```
 
 A description of the size.  Weight and length.
 ```json
-	cr.sizedescription = "7' wide, weighing 300 lbs"
+	"sizedescription" = "7' wide, weighing 300 lbs"
 ```
 
 Treasure.  usually a code.  For specific items use inventory items.
 ```json
-	cr.treasure = 'c'
+	"treasure" = "c"
 ```
 
 Magic realm.  Usually essence, channeling or mentalism.  May be hybrid or arcane realms
 ```json
-	cr.realm = "Channeling",
+	"realm" = "Channeling",
 ```
 
 Category the creature belongs too.
 ```json
-	cr.creaturecatory = "Animal-Birds"
+	"creaturecatory" = "Animal-Birds"
 ```
 
 The breeding pattern.  Listed as 'misc' in creature law.
 ```json
-	cr.family = "Lots of eggs",
+	"family" = "Lots of eggs",
 ```
